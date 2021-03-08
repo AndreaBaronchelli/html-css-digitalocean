@@ -33,6 +33,25 @@ a:hover {
     font-weight: bold;
 }
 
+.circle {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border: 1px solid #4891fe;
+    border-radius: 50%;
+
+}
+
+.circle.active {
+    background-color: #4891fe;
+}
+
+.arrow {
+    display: inline-block;
+    font-size: 30px;
+    margin: 0 10px
+}
+
 /* Buttons */
 .button {
     padding: 10px 15px;
@@ -247,6 +266,23 @@ a:hover {
     font-size: 15px;
 }
 
+/* Slides */
+.slides {
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+
+.slides .slide {
+    margin-top: 160px;
+    margin-bottom: 100px;
+    padding: 0 50px;
+}
+
+.slides .slide img {
+    max-width: 60%;
+    margin-bottom: 30px;
+}
+
 /*******************************************
 RESPONSIVE
 *******************************************/
@@ -259,6 +295,7 @@ RESPONSIVE
         margin: 10px 20px;
         width: calc((100% / 6) - 50px);
     }
+
     /* Configuration */
     .configuration .contents {
         padding-top: 70px;
@@ -267,6 +304,11 @@ RESPONSIVE
         margin-bottom: 20px;
         height: 180px;
     }
+
+    /* Slides */
+    .slides .slide {
+        margin-bottom: 90px;
+    }
 }
 
 /* Desktop (from 992px) */
@@ -274,5 +316,11 @@ RESPONSIVE
     /* GENERAL */
     h1 {
         font-size: 65px;
+    }
+
+    /* SECTIONS */
+    /* Slides */
+    .slides .slide {
+        margin-bottom: 10px;
     }
 }
