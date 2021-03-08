@@ -7,6 +7,15 @@ p {
     font-size: 22px;
 }
 
+a {
+    color: dodgerblue;
+}
+
+a:hover {
+    color: #006aff ;
+    text-decoration: none;
+}
+
 /* UTILITIES */
 .fixed {
     position: fixed;
@@ -14,6 +23,10 @@ p {
 
 .pos-rel {
     position:relative;
+}
+
+.b {
+    font-weight: bold;
 }
 
 /* Buttons */
@@ -62,7 +75,11 @@ p {
 }
 
 .color-lightgrey {
-    color: #acc2ff;
+    color: #747474;
+}
+
+.color-transparent {
+    opacity: 0.5;
 }
 /* Background Colors */
 .bg-white {
@@ -92,10 +109,11 @@ p {
     text-decoration: none;
     display: block;
     color: #30436d;
+    background-color: #fff ;
 }
   
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: #006aff;
 }
   
 .dropdown:hover .dropdown-content {
@@ -128,11 +146,6 @@ p {
     font-size: 16px;
     color: #2D416F;
     transition: color 0.2s;
-}
-
-.main-navigation a:hover {
-    color: #4891fe;
-    text-decoration: none;
 }
 
 .main-navigation a.button {
@@ -182,20 +195,41 @@ p {
     height: 20px;
 }
 
+.hero .terms {
+    font-size: 12px;
+}
+
 .hero .terms a {
     text-decoration: underline;
-    color: dodgerblue;
 }
 
-.hero .terms a:hover {
-    color: #006aff;
+/* Customers */
+.customers {
+    padding-top: 50px;
+    padding-bottom: 35px;
+    background-color: #f2f5f9;
 }
 
+.customers .logos {
+    width: 100%;
+}
+
+.customers .logos img {
+    margin: 10px 20px;
+    width: calc((100% / 2) - 50px);
+}
 /*******************************************
 RESPONSIVE
 *******************************************/
 /* Tablet (from 768px to 991px) */
-
+@media screen and (min-width: 768px) {
+    /* SECTIONS */
+    /* Customers */
+    .customers .logos img {
+        margin: 10px 20px;
+        width: calc((100% / 6) - 50px);
+    }
+}
 /* Desktop (from 992px) */
 
 @media screen and (min-width: 992px) {
