@@ -246,9 +246,11 @@ a:hover {
 .configuration .box p {
     font-size: 15px;
 }
+
 /*******************************************
 RESPONSIVE
 *******************************************/
+
 /* Tablet (from 768px to 991px) */
 @media screen and (min-width: 768px) {
     /* SECTIONS */
@@ -266,8 +268,8 @@ RESPONSIVE
         height: 180px;
     }
 }
-/* Desktop (from 992px) */
 
+/* Desktop (from 992px) */
 @media screen and (min-width: 992px) {
     /* GENERAL */
     h1 {
