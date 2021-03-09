@@ -382,7 +382,7 @@ a:hover {
 /* Footer */
 .main-footer {
     padding-top: 60px;
-    padding-bottom: 80px;
+    padding-bottom: 90px;
 }
 
 .main-footer img {
@@ -420,6 +420,58 @@ a:hover {
 
 .main-footer a:hover {
     color: #4891fe;
+}
+
+/* Helper */
+.helper {
+    bottom: 20px;
+    left: 40px;
+}
+
+.helper .image {
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+.helper img {
+    width: 100%;
+    background-color: #006aff;
+    border-radius: 5px;
+}
+
+.helper .chat-number {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    height: 25px;
+    width: 25px;
+    vertical-align: middle;
+    background-color: red;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.helper .text {
+    width: 350px;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+.helper .text::after {
+    content: "";
+    height: 10px;
+    width: 10px;
+    transform: rotate(45deg);
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    right: -5px;
+    background-color: #fff;
+}
+
+.helper:hover .text {
+    display: block;
 }
 
 /*******************************************
@@ -462,5 +514,12 @@ RESPONSIVE
     .slides .slide {
         margin-top: 80px;
         margin-bottom: 10px;
+    }
+
+    /* Helper */
+    .helper {
+        bottom: 20px;
+        left: auto;
+        right: 40px;
     }
 }
