@@ -1,4 +1,8 @@
 /* GENERAL */
+body {
+    color: #30436d;
+}
+
 h1 {
     font-size: 40px;
 }
@@ -283,6 +287,28 @@ a:hover {
     margin-bottom: 30px;
 }
 
+/* Features */
+.features {
+    padding-top: 80px;
+    padding-bottom: 90px;
+}
+
+.features .content {
+    margin-top: 40px;
+}
+
+.features .content img {
+    margin-bottom: 20px;
+}
+
+.features .content p {
+    font-size: 14px;
+}
+
+.features .content a {
+    font-size: 16px;
+}
+
 /*******************************************
 RESPONSIVE
 *******************************************/
@@ -321,6 +347,7 @@ RESPONSIVE
     /* SECTIONS */
     /* Slides */
     .slides .slide {
+        margin-top: 80px;
         margin-bottom: 10px;
     }
 }
