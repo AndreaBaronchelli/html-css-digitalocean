@@ -50,10 +50,20 @@ a:hover {
     background-color: #4891fe;
 }
 
-.arrow {
-    display: inline-block;
+.arrow-left,
+.arrow-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     font-size: 30px;
-    margin: 0 10px
+}
+
+.arrow-left {
+    left: 30px;
+}
+
+.arrow-right {
+    right: 30px;
 }
 
 /* Buttons */
@@ -274,20 +284,21 @@ a:hover {
     font-size: 15px;
 }
 
-/* Slides */
+/* Slides Top*/
 .slides {
     padding-top: 80px;
     padding-bottom: 70px;
 }
 
 .slides .slide {
-    margin-top: 160px;
-    margin-bottom: 100px;
+    width: 75%;
+    display: inline-block;
+    margin: 160px auto 100px;
     padding: 0 50px;
 }
 
 .slides .slide img {
-    max-width: 60%;
+    max-width: 80%;
     margin-bottom: 30px;
 }
 
@@ -331,6 +342,18 @@ a:hover {
 .tables table td {
     padding: 10px;
     font-size: 12px;
+}
+
+/* Slides bottom */
+.slides.bottom .description {
+    margin-bottom: 40px;
+}
+
+.slides.bottom .content {
+    width: 70%;
+    margin: 0 auto;
+    padding: 40px 0;
+    border-radius: 5px;
 }
 
 /*******************************************
