@@ -1,6 +1,7 @@
 /* GENERAL */
 body {
     color: #30436d;
+    font-family: 'Roboto', sans-serif;
 }
 
 h1 {
@@ -264,9 +265,14 @@ a:hover {
     width: 100%;
 }
 
-.customers .logos img {
+.customers .logos li {
     margin: 10px 20px;
+    padding-inline-start: 0;
     width: calc((100% / 2) - 50px);
+}
+
+.customers .logos li img {
+    width: 100%;
 }
 
 /* Configuration */
@@ -482,7 +488,7 @@ RESPONSIVE
 @media screen and (min-width: 768px) {
     /* SECTIONS */
     /* Customers */
-    .customers .logos img {
+    .customers .logos li {
         margin: 10px 20px;
         width: calc((100% / 6) - 50px);
     }
