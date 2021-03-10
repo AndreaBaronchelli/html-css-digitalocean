@@ -121,6 +121,7 @@ a:hover {
 .color-transparent {
     opacity: 0.6;
 }
+
 /* Background Colors */
 .bg-white {
     background-color: #fff;
@@ -466,6 +467,7 @@ a:hover {
     padding: 10px;
     border-radius: 5px;
     display: none;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
 }
 
 .helper .text::after {
