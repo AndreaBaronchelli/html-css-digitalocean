@@ -292,6 +292,10 @@ a:hover {
     color: #747474;
 }
 
+.configuration aside ul a:hover {
+    color: #006aff;
+}
+
 .configuration .box p {
     font-size: 15px;
 }
